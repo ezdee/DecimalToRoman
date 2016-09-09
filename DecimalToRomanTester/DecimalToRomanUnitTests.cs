@@ -19,5 +19,18 @@ namespace DecimalToRomanTester
             //Assert
             Assert.AreEqual("I", roman);
         }
+
+        [TestMethod]
+        public void DecimalToRomanConvertor_When4_ReturnIV()
+        {
+            //Arrange
+            int decimalNum = 4;
+
+            //Act
+            string roman = DecimalToRomanConvertor.ConvertToRoman(decimalNum);
+
+            //Assert
+            Assert.AreEqual("IV", roman);
+        }
     }
 }
