@@ -58,5 +58,18 @@ namespace DecimalToRomanTester
             //Assert
             Assert.AreEqual("IX", roman);
         }
+
+        [TestMethod]
+        public void DecimalToRomanConvertor_When10_ReturnX()
+        {
+            //Arrange
+            int decimalNum = 10;
+
+            //Act
+            string roman = DecimalToRomanConvertor.ConvertToRoman(decimalNum);
+
+            //Assert
+            Assert.AreEqual("X", roman);
+        }
     }
 }
