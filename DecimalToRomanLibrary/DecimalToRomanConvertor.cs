@@ -27,7 +27,29 @@ namespace DecimalToRomanLibrary
                     {1000,"M"}
                 };
 
-            return roman[decimalNum];
+            int divisor = 0;
+            int times = 0;
+            string output = string.Empty;
+
+            while (decimalNum != 0)
+            {
+                foreach (int key in roman.Keys)
+                {
+                    if (key > decimalNum)
+                        break;
+                    divisor = key;
+                }
+
+                times = decimalNum / divisor;
+                for (int i = 1; i <= times; i++)
+                {
+                    output += roman[divisor];
+                }
+
+                decimalNum = decimalNum % divisor;
+            }
+
+            return output;
         }
     }
 }
