@@ -55,6 +55,12 @@
   <ItemGroup>
     <Folder Include="Properties\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DecimalToRomanLibrary\DecimalToRomanLibrary.csproj">
+      <Project>{F951787E-3C64-4597-B09B-D9B2F129D7B2}</Project>
+      <Name>DecimalToRomanLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

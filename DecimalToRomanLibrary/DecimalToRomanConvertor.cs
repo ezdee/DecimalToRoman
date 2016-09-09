@@ -8,5 +8,9 @@ namespace DecimalToRomanLibrary
 {
     public class DecimalToRomanConvertor
     {
+        public static string ConvertToRoman(int decimalNum)
+        {
+            return "I";
+        }
     }
 }

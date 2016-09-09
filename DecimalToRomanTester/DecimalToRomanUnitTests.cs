@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using DecimalToRomanLibrary;
 
 namespace DecimalToRomanTester
 {
@@ -16,6 +17,7 @@ namespace DecimalToRomanTester
             string roman = DecimalToRomanConvertor.ConvertToRoman(decimalNum);
 
             //Assert
+            Assert.AreEqual("I", roman);
         }
     }
 }
