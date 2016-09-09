@@ -175,5 +175,18 @@ namespace DecimalToRomanTester
             //Assert
             Assert.AreEqual("M", roman);
         }
+
+        [TestMethod]
+        public void DecimalToRomanConvertor_When2016_ReturnMMXVI()
+        {
+            //Arrange
+            int decimalNum = 2016;
+
+            //Act
+            string roman = DecimalToRomanConvertor.ConvertToRoman(decimalNum);
+
+            //Assert
+            Assert.AreEqual("MMXVI", roman);
+        }
     }
 }
