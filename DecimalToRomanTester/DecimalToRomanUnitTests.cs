@@ -71,5 +71,18 @@ namespace DecimalToRomanTester
             //Assert
             Assert.AreEqual("X", roman);
         }
+
+        [TestMethod]
+        public void DecimalToRomanConvertor_When40_ReturnXL()
+        {
+            //Arrange
+            int decimalNum = 40;
+
+            //Act
+            string roman = DecimalToRomanConvertor.ConvertToRoman(decimalNum);
+
+            //Assert
+            Assert.AreEqual("XL", roman);
+        }
     }
 }
