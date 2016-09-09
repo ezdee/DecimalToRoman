@@ -123,5 +123,18 @@ namespace DecimalToRomanTester
             //Assert
             Assert.AreEqual("C", roman);
         }
+
+        [TestMethod]
+        public void DecimalToRomanConvertor_When400_ReturnCD()
+        {
+            //Arrange
+            int decimalNum = 400;
+
+            //Act
+            string roman = DecimalToRomanConvertor.ConvertToRoman(decimalNum);
+
+            //Assert
+            Assert.AreEqual("CD", roman);
+        }
     }
 }
