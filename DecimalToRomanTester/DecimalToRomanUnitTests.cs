@@ -162,5 +162,18 @@ namespace DecimalToRomanTester
             //Assert
             Assert.AreEqual("CM", roman);
         }
+
+        [TestMethod]
+        public void DecimalToRomanConvertor_When1000_ReturnM()
+        {
+            //Arrange
+            int decimalNum = 1000;
+
+            //Act
+            string roman = DecimalToRomanConvertor.ConvertToRoman(decimalNum);
+
+            //Assert
+            Assert.AreEqual("M", roman);
+        }
     }
 }
