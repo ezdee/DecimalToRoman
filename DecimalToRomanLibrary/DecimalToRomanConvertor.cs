@@ -21,7 +21,8 @@ namespace DecimalToRomanLibrary
                     {50,"L"},
                     {90,"XC"},
                     {100,"C"},
-                    {400,"CD"}
+                    {400,"CD"},
+                    {500,"D"}
                 };
 
             return roman[decimalNum];
