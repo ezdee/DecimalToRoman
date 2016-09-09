@@ -149,5 +149,18 @@ namespace DecimalToRomanTester
             //Assert
             Assert.AreEqual("D", roman);
         }
+
+        [TestMethod]
+        public void DecimalToRomanConvertor_When900_ReturnCM()
+        {
+            //Arrange
+            int decimalNum = 900;
+
+            //Act
+            string roman = DecimalToRomanConvertor.ConvertToRoman(decimalNum);
+
+            //Assert
+            Assert.AreEqual("CM", roman);
+        }
     }
 }
