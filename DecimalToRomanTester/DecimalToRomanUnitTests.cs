@@ -110,5 +110,18 @@ namespace DecimalToRomanTester
             //Assert
             Assert.AreEqual("XC", roman);
         }
+
+        [TestMethod]
+        public void DecimalToRomanConvertor_When100_ReturnC()
+        {
+            //Arrange
+            int decimalNum = 100;
+
+            //Act
+            string roman = DecimalToRomanConvertor.ConvertToRoman(decimalNum);
+
+            //Assert
+            Assert.AreEqual("C", roman);
+        }
     }
 }
