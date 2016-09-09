@@ -10,7 +10,18 @@ namespace DecimalToRomanLibrary
     {
         public static string ConvertToRoman(int decimalNum)
         {
-            return "I";
+            string output = string.Empty;
+
+            if (decimalNum == 1)
+            {
+                output = "I";
+            }
+            if (decimalNum == 4)
+            {
+                output = "IV";
+            }
+
+            return output;
         }
     }
 }
