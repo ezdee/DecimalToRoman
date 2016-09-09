@@ -32,5 +32,18 @@ namespace DecimalToRomanTester
             //Assert
             Assert.AreEqual("IV", roman);
         }
+
+        [TestMethod]
+        public void DecimalToRomanConvertor_When5_ReturnV()
+        {
+            //Arrange
+            int decimalNum = 5;
+
+            //Act
+            string roman = DecimalToRomanConvertor.ConvertToRoman(decimalNum);
+
+            //Assert
+            Assert.AreEqual("V", roman);
+        }
     }
 }
