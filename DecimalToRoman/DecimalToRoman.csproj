@@ -51,6 +51,12 @@
   <ItemGroup>
     <Folder Include="Properties\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DecimalToRomanLibrary\DecimalToRomanLibrary.csproj">
+      <Project>{f951787e-3c64-4597-b09b-d9b2f129d7b2}</Project>
+      <Name>DecimalToRomanLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
